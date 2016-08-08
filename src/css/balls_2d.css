@@ -1,0 +1,34 @@
+canvas {
+
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #C6E2FF;
+}
+
+body 
+{
+	background-color: #44ccff;
+}
+
+
+#div1
+{
+	font-weight: 10px;
+	font-family: Arial;
+	text-align: center;
+}
+
+#div2{
+    position: relative;
+	text-align: center;
+	  position: relative;
+    width: 100%;
+}
+
+#div3{
+	position: absolute;
+	margin-left: 25%;
+}

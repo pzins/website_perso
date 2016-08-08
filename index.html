@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        .mypic{
+            width: 150px;
+        }
+        .container{
+            width: 69%;
+        }
+        .tabs .tab a {
+            color: #038FD3;
+
+        }
+        .tabs .tab a:hover {
+            color: #6ED0FF;
+        }
+        .tabs .indicator {
+            background-color: #038FD3;
+            height: 4px;
+        }
+        .card .card-content {
+            padding-top: 5px;
+            padding-bottom: 1px;
+        }
+        .card .card-action {
+            border-top: 1px solid rgba(160, 160, 160, 0.2);
+            padding: 5px;
+        }
+        .card-panel {
+            padding-top: 0.1cm;
+            padding-bottom: 0.1cm;
+            margin-top: 3cm;
+        }
+        h2{
+            color: #1593E8;
+        }
+        .card-title{
+            color: #434343;
+        }
+
+        #materialbox-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .keyword{
+            font-weight: 500;
+            font-style: oblique;
+        }
+        .nomargin {
+            margin-top: 0;
+        }
+        .marge {
+            margin-left: 2em;
+            list-style-type: square;
+        }
+        .no_scroll {
+            overflow-x:hidden;
+            overflow-y:hidden;
+        }
+        .utc {
+            -moz-border-radius:10px 0;
+            -webkit-border-radius:10px 0;
+            border-radius:10px 0;
+        }
+    </style>
+</head>
+
+<body class="container grey lighten-5" style="background-image: url('img/background.jpg')">
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- Compiled and minified CSS -->
+
+
+<div class="center-align">
+    <h1 class="blue-text mdi-border" style="font-family: verdana; border-color: #29b6f6; border-width: 5px;
+    background-color: #ffffff;">Pierre ZINS</h1>
+</div>
+
+<div class="row ">
+    <div class="col s12 " style="font-size: larger; font-weight: 700">
+        <ul class="tabs no_scroll">
+            <li class="tab col s3"><a class="active" href="#about">About Me</a></li>
+            <li class="tab col s3"><a href="#projects">Projects</a></li>
+            <li class="tab col s3"><a href="#resume">Resume</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div id="about" class="center-align white-text" style="font-weight: 700; font-size: larger">
+    <div>
+        I'm a 4th year Computer Science student at UTC.
+        <br/>
+        Speciality : Real-time and embedded systems
+        <br/>
+        Degree expected : September 2017
+    </div>
+    <br/><br/>
+    <a href="https://www.linkedin.com/in/zinspierre" class="waves-effect btn raised blue">Linkedin</a>
+    <a href="https://github.com/zinspierre" class="waves-effect btn raised blue"> Github </a>
+    <a href="https://plus.google.com/104893340012018126807/about" class="waves-effect btn raised blue">Google+</a>
+    <br/><br/><br/>
+    <img class="center utc" src="img/utc.jpg" alt=""/>
+</div>
+
+
+
+
+
+<div id="projects">
+
+
+    <div class="cyan-text">
+        <div class="grid-example col s12 white-text card-panel light-blue lighten-2 center">
+            <span class="flow-text"><h3>Class projects </h3></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                    <span class="card-title">
+                        <h4>Mini real time kernel</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Development of a mini real time kernel for ARM.
+                        <br/>
+                    Four steps :
+                    <ul class="nomargin">
+                        <li class="marge">tasks creation and scheduler</li>
+                        <li class="marge">mutex</li>
+                        <li class="marge">semaphores</li>
+                        <li class="marge">pipes</li>
+                    </ul>
+                    </p>
+                    <div class="keyword black-text">Assembleur ARM, C</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/kernel1.png">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/kernel2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                    <span class="card-title">
+                        <h4>Virtual Pong</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Android application. <br/> A Pong game which uses smartphone sensors :
+                        Gyroscope, Accelerometer.
+
+                    <br/>
+                        Two game modes :
+                        <ul class="nomargin">
+                            <li class="marge"> 2 players : game duplicated on both screen</li>
+                            <li class="marge">2 players and a third screen : game only on the main screen</li>
+                        </ul>
+                        Two modes of communication :
+                        <ul class="nomargin">
+                            <li class="marge">Wifi local network</li>
+                            <li class="marge">Wifi Direct</li>
+                        </ul>
+                    </p>
+                    <div class="keyword black-text">Java Android</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/virtualPong1.jpg">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/virtualPong2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/VirtualPong">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                <span class="card-title ">
+                    <h4>Distributed application with shared data</h4>
+                </span>
+                    <p class="accent-5">
+                        Implementation of two algorithms with the distribution Airplug for a distributed application :
+                        <ul class="nomargin">
+                            <li class="marge">Distributed queue algorithm for the mutex</li>
+                            <li class="marge">Snapshot algorithm for back-up</li>
+                        </ul>
+                    </p>
+                    <p class="keyword black-text">Tcl, Tk</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/sr05.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                <span class="card-title">
+                    <h4>Project Calendar</h4>
+                </span>
+                    <p class="grey-text accent-5">
+                        Desktop application which mixes features
+                        of a agenda and project manager tools
+                    </p>
+                    <p class="keyword">C++, Qt</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/projets.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/ProjectCalendar_LO21">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                <span class="card-title">
+                    <h4>Nimpstore</h4>
+                </span>
+                    <p class="grey-text accent-5">
+                        A database software to manage the Nimpstore, an applications download platform
+                    </p>
+                    <p class="keyword">SQL (PostgreSQL), PHP</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/nimpstore.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/nimpstore">Code</a><br/>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Tower Defense</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Tower defense game in the console.
+                        <br/>
+                    </p>
+                    <div class="keyword">C++</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/sep.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/Tower-Defense">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                <span class="card-title">
+                    <h4>Change Words</h4>
+                </span>
+                    <p class="grey-text accent-5">
+                        Android application which allows you to scan phrases in your environment <br/>
+                        to answers enigmas or change words with their synonyms
+                    </p>
+                    <p class="keyword">Android Java</p>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/si28.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/si28">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="cyan-text">
+        <div class="grid-example col s12 white-text card-panel light-blue lighten-2 center">
+            <span class="flow-text"><h3>Others</h3></span></div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                <span class="card-title">
+                    <h4>Kmeans Algorithm</h4>
+                </span>
+                    <p class="grey-text accent-5">
+                        Implementation of the Kmeans clustering Algorithm
+                    </p>
+                    <p class="keyword">Python, Matplotlib</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/kmeans.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/kmeans_python">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                        <span class="card-title">
+                            <h4>Phrase Generator</h4>
+                        </span>
+                    <p class="grey-text accent-5">
+                        Learn from Text and generates phrases (tested with "Le Rouge et le Noir")
+                    </p>
+                    <p class="keyword">C++</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/rouge.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/Phrase-Generator">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Sudoku Solver C++</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        You can extract grid from image with Tesseract OCR and OpenCV
+                        <br/>
+                        And solve the entire grid or just get one solution (one number at random position)
+                    </p>
+                    <p class="keyword">C++, Qt, Tesseract OCR, OpenCV</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/sudoku_cpp.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/Sudoku">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Sudoku Solver JS</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        You can put a Sudoku grid as text and it will solve it
+                    </p>
+                    <p class="keyword">Javascript</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/sudoku_js.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="src/sudoku_js.html">Test</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Graph Library</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Basic 2D Graph library
+                        <br/>
+                        Draw graphs, add edges, nodes, ...
+                    </p>
+                    <p class="keyword">C++, CMake</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/graphs2d.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinsmatt/Graph">Code</a><br/>
+        </div>
+    </div>
+
+
+
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Space Ball 3D</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Move with mouse and keyboard arrows and try to wipe all balls.
+                    </p>
+                    <p class="keyword">Javascript, ThreeJS</p>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 mypic" src="img/icons/3d_space_balls.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="src/balls_3D.html">Test</a><br/>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Graphs Maker</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Application to create graphs.
+                    </p>
+                    <p class="keyword">C++, Qt</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 mypic" src="img/icons/graphs.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3 small">
+            <a class="right black-text" href="https://github.com/zinspierre/Graphe">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Bouncing Balls</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Avoid collision with other balls.
+                        Two versions : C++ and Javascript
+                    </p>
+                    <p class="keyword">C++, SFML // Javascript</p>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic"
+                         src="img/icons/bouncing_balls_c++.png">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic"
+                         src="img/icons/bouncing_balls_js.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/Bouncing_balls">Code</a>
+            <a class="right black-text" href="src/balls_game.html">Test</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col grey-text left-align">
+                    <span class="card-title">
+                        <h4>Pong Game</h4>
+                    </span>
+                    <p class="accent-5">
+                        Controls : Keyboard Arrows
+                        Bonus :
+                    <ul class="nomargin">
+                        <li class="marge">Blue Circle : Big Paddle</li>
+                        <li class="marge">Red Circle : Faster Paddle</li>
+                        <li class="marge">Yellow Circle : Faster Ball</li>
+                    </ul>
+                    </p>
+                    <p class="keyword black-text">C++, SFML</p>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic"
+                         src="img/icons/pong.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text " href="https://github.com/zinspierre/pong">Code</a><br/>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>2048</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Controls : Keyboard Arrows
+                    </p>
+                    <p class="keyword">C++, SFML</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/2048.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/2048">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Letters</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Find the longest french word with the given letters.
+                    </p>
+                    <div class="keyword">Javascript</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic"
+                         src="img/icons/words.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="src/words.html">Test</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col grey-text left-align">
+                    <span class="card-title">
+                        <h4>Snake</h4>
+                    </span>
+                    <p class="accent-5">
+                        <ul class="nomargin">
+                            <li class="marge">Controls : Keyboard Arrows</li>
+                            <li class="marge">First version :  you move the snake</li>
+                            <li class="marge">Second version : the snake moves itself</li>
+                        </ul>
+                    </p>
+                    <p class="keyword black-text">C++, SFML</p>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/snake.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/zinspierre/snake">Code</a>
+            <a class="right black-text" href="https://github.com/zinspierre/snake_auto">Code IA</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Todos</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        AngularJS App to write what you have to do.
+                    </p>
+                    <div class="keyword">AngularJS</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/todos.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="src/todos.html">Test</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>Git Search</h4>
+                    </span>
+
+                    <p class="grey-text accent-5">
+                        AngularJS App : You can search repos from Github and display your location.
+                    </p>
+                    <div class="keyword">AngularJS</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/git.jpeg">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="src/gitSearch.html">Test</a><br/>
+        </div>
+    </div>
+
+
+
+    <div class="cyan-text">
+        <div class="grid-example col s12 white-text card-panel light-blue lighten-2 center">
+            <span class="flow-text"><h3>Class presentation</h3></span></div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h4>2D Balls</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        You can change ball's size and speed. One version with marks, one without
+                        <br/>
+                    </p>
+                    <div class="keyword">Javascript</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/ball_2D.png">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/ball_2D_mark.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="src/ball_2D_mark.html">Test with Marks</a>
+            <a class="right black-text" href="src/ball_2D.html">Test without</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align">
+                    <span class="card-title">
+                        <h3>Basic Calculator</h3>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Operator supported : + - * /
+                        <br>
+                    </p>
+                    <div class="keyword">Javascript</div>
+
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/calculatrice.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="src/calculatrice.html">Test</a><br/>
+        </div>
+    </div>
+
+</div>
+
+<div id="resume" class="center-align no_scroll">
+    <img class="mdi-border grey lighten-3 center-align" width="800" src="img/resume_en.png">
+</div>
+
+</body>
+
+</html>
+        
