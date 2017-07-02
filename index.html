@@ -17,14 +17,14 @@
             width: 69%;
         }
         .tabs .tab a {
-            color: #038FD3;
+            color: #000;
 
         }
         .tabs .tab a:hover {
-            color: #6ED0FF;
+            color: #2196F3;
         }
         .tabs .indicator {
-            background-color: #038FD3;
+            background-color: #2196F3;
             height: 4px;
         }
         .card .card-content {
@@ -39,6 +39,8 @@
             padding-top: 0.1cm;
             padding-bottom: 0.1cm;
             margin-top: 3cm;
+            font-size: 14px;
+
         }
         h2{
             color: #1593E8;
@@ -50,7 +52,7 @@
         #materialbox-overlay {
             background-color: rgba(0, 0, 0, 0.7);
         }
-        
+
         .keyword{
             font-weight: 500;
             font-style: oblique;
@@ -74,8 +76,9 @@
 
     </style>
 </head>
+<!--  background-image: url('img/background.jpg')"> -->
 
-<body class="container grey lighten-5" style="background-image: url('img/background.jpg')">
+<body class="container lighten-5" style="background-color: #FFFFFF">
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -83,8 +86,8 @@
 
 
 <div class="center-align">
-    <h1 class="blue-text mdi-border" style="font-family: verdana; border-color: #29b6f6; border-width: 5px;
-    background-color: #ffffff;">Pierre ZINS</h1>
+    <h1 class="mdi-border" style="font-family: monospace; border-color: #222222; border-width: 5px; color: #000000;
+    background-color: #FFFFFF;">Pierre ZINS</h1>
 </div>
 
 <div class="row ">
@@ -98,20 +101,18 @@
 
 </div>
 
-<div id="about" class="center-align white-text" style="font-weight: 700; font-size: larger">
-    <div>
-        I'm a 4th year Computer Science student at UTC.
-        <br/>
-        Speciality : Real-time and embedded systems
-        <br/>
-        Degree expected : September 2017
+<div id="about" class="center-align black-text" style="font-size: larger">
+    <div >
+        5th year Computer Science student at UTC (speciality real time and embedded systems). <br/>
+        I am currently studying at Polytechnique Montreal as a research master student for a double degree. <br/>
+        For my master, I am working at the DORSAL lab ( Distributed Open Reliable systems Analysis Lab)
     </div>
     <br/><br/>
     <a href="https://www.linkedin.com/in/zinspierre" class="waves-effect btn raised blue">Linkedin</a>
-    <a href="https://github.com/zinspierre" class="waves-effect btn raised blue"> Github </a>
-    <a href="https://plus.google.com/104893340012018126807/about" class="waves-effect btn raised blue">Google+</a>
+    <a href="https://github.com/pzins" class="waves-effect btn raised blue"> Github </a>
     <br/><br/><br/>
-    <img class="center utc" src="img/utc.jpg" alt=""/>
+    <img class="left utc" src="img/utc.png" alt=""/>
+    <img class="right utc" src="img/polymtl.png" alt=""/>
 </div>
 
 
@@ -122,8 +123,137 @@
 
 
     <div class="cyan-text">
-        <div class="grid-example col s12 white-text card-panel light-blue lighten-2 center">
-            <span class="flow-text"><h3>Class projects </h3></span>
+        <div class="grid-example col s12 white-text card-panel light-blue center">
+            <span class="flow-text"><h3>Projects </h3></span>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                    <span class="card-title">
+                        <h4>Artificial Intelligence / Deep Learning</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        <ul class="nomargin">
+                            <li class="marge">Logistic regression</li>
+                            <li class="marge">Neural Network : multi layer perceptron</li>
+                            <li class="marge">Convolutional Neural Network : IMDB Wiki face database,
+                                OpenCV pre-processing, gender classification, <br/> age regression, predictions,
+                                 application to predict age from webcam stream</li>
+                        </ul>
+                    </p>
+                    <div class="keyword black-text">Deep Learning, Python Numpy, Theano, Tensorflow, Keras</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/inf8225.png">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/cnn.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/pzins/inf8225">Code</a>
+            <a class="right black-text" href="reports/inf8225_project_report.pdf">Report</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                    <span class="card-title">
+                        <h4>Computer Vision projects</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        <ul class="nomargin">
+                            <li class="marge">Segmentation using background substraction</li>
+                            <li class="marge">Object tracking in vide sequence</li>
+                            <li class="marge">Facial recognition/reconstruction using EigenFaces method</li>
+                            <li class="marge">SuperPixel segmentation</li>
+                            <li class="marge">Region tracking</li>
+                        </ul>
+                    </p>
+                    <div class="keyword black-text">C++, OpenCV</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/eigenfaces.png">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/sp.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="https://github.com/pzins/inf6803">Code</a>
+            <a class="right black-text" href="https://github.com/pzins/SuperPixel">Code</a>
+            <a class="right black-text" href="https://github.com/pzins/region_tracking">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                    <span class="card-title">
+                        <h4>Ring Project refactoring</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Analysis of the Ring project, and propose a refactoring : <br/>
+                        Refactor joinParticipant method in the manager.
+                    </p>
+                    <div class="keyword black-text">C++</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/ring.png">
+                </div>
+            </div>
+        </div>
+        <div class="card-action grey lighten-3">
+            <a class="right black-text" href="reports/ring3.pdf">Report 3</a>
+            <a class="right black-text" href="reports/ring2.pdf">Report 2</a>
+            <a class="right black-text" href="reports/ring1.pdf">Report 1</a>
+            <a class="right black-text" href="https://gerrit-ring.savoirfairelinux.com/#/c/6105/">Code</a><br/>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                    <span class="card-title">
+                        <h4>System securing</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        The goal of this project was to secure a simulated network architecture of a company.
+                        <br/> We used the CISCO ASA firewall.
+                    </p>
+                    <div class="keyword black-text">ASA CISCO, VMware</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/asa.png">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/asa2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content center-align">
+            <div class="row">
+                <div class="col left-align grey-text">
+                    <span class="card-title">
+                        <h4>Router on FPGA</h4>
+                    </span>
+                    <p class="grey-text accent-5">
+                        Develop a real time router application for an embedded system using RTOS µC. <br/>
+                        Execution : ARM processor on FPGA chip.
+                    </p>
+                    <div class="keyword black-text">µC/OSII, ARM, FPGA</div>
+                </div>
+                <div class="col right">
+                    <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/microc.png">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -184,16 +314,12 @@
                 <div class="col right">
                     <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/virtualPong1.jpg">
                     <img class="materialboxed mdi-border grey lighten-3 center-align mypic" src="img/icons/virtualPong2.jpg">
-                    <a class="large" href="mi12_report.pdf">
-                        <img src="img/docu.png" alt=""/>
-                        <figcaption class="report">Report</figcaption>
-                    </a>
-
                 </div>
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/VirtualPong">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/VirtualPong">Code</a>
+            <a class="right black-text" href="reports/mi12_report.pdf">Report</a><br/>
         </div>
     </div>
 
@@ -242,7 +368,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/ProjectCalendar_LO21">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/ProjectCalendar_LO21">Code</a><br/>
         </div>
     </div>
 
@@ -265,7 +391,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/nimpstore">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/nimpstore">Code</a><br/>
         </div>
     </div>
 
@@ -290,7 +416,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/Tower-Defense">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/Tower-Defense">Code</a><br/>
         </div>
     </div>
 
@@ -313,12 +439,12 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/si28">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/si28">Code</a><br/>
         </div>
     </div>
 
     <div class="cyan-text">
-        <div class="grid-example col s12 white-text card-panel light-blue lighten-2 center">
+        <div class="grid-example col s12 white-text card-panel light-blue center">
             <span class="flow-text"><h3>Others</h3></span></div>
     </div>
 
@@ -341,7 +467,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/kmeans_python">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/kmeans_python">Code</a><br/>
         </div>
     </div>
 
@@ -364,7 +490,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/Phrase-Generator">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/Phrase-Generator">Code</a><br/>
         </div>
     </div>
 
@@ -389,7 +515,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/Sudoku">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/Sudoku">Code</a><br/>
         </div>
     </div>
 
@@ -487,7 +613,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3 small">
-            <a class="right black-text" href="https://github.com/zinspierre/Graphe">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/Graphe">Code</a><br/>
         </div>
     </div>
 
@@ -513,7 +639,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/Bouncing_balls">Code</a>
+            <a class="right black-text" href="https://github.com/pzins/Bouncing_balls">Code</a>
             <a class="right black-text" href="src/balls_game.html">Test</a><br/>
         </div>
     </div>
@@ -543,7 +669,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text " href="https://github.com/zinspierre/pong">Code</a><br/>
+            <a class="right black-text " href="https://github.com/pzins/pong">Code</a><br/>
         </div>
     </div>
 
@@ -567,7 +693,7 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/2048">Code</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/2048">Code</a><br/>
         </div>
     </div>
 
@@ -617,8 +743,8 @@
             </div>
         </div>
         <div class="card-action grey lighten-3">
-            <a class="right black-text" href="https://github.com/zinspierre/snake">Code</a>
-            <a class="right black-text" href="https://github.com/zinspierre/snake_auto">Code IA</a><br/>
+            <a class="right black-text" href="https://github.com/pzins/snake">Code</a>
+            <a class="right black-text" href="https://github.com/pzins/snake_auto">Code IA</a><br/>
         </div>
     </div>
 
@@ -667,12 +793,6 @@
         </div>
     </div>
 
-
-
-    <div class="cyan-text">
-        <div class="grid-example col s12 white-text card-panel light-blue lighten-2 center">
-            <span class="flow-text"><h3>Class presentation</h3></span></div>
-    </div>
 
     <div class="card">
         <div class="card-content center-align">
@@ -732,4 +852,3 @@
 </body>
 
 </html>
-        
